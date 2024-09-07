@@ -11,8 +11,16 @@ const CartItem = ({ onContinueShopping }) => {
   // Calculate total amount for all products in the cart
   const calculateTotalAmount = () => {
     let totalAmount = 0;
-    cart.map(item => totalAmount += item.quantity * item.cost);
-    
+    cart.forEach(item => {
+      console.log(item)
+      const quantity = Number(item.quantity); // Convert quantity to number
+  
+      // Remove the dollar sign and convert cost to number
+      const cost = parseFloat(item.cost.replace('$', ''));
+  
+      totalAmount += quantity * cost;
+    });
+  
     return totalAmount;
   };
 
