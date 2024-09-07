@@ -29,7 +29,7 @@ const CartItem = ({ onContinueShopping }) => {
 
   const handleCheckoutShopping = (e) => {
     e.preventDefault();
-    alert('Functionality to be added for future reference');
+    alert("Checkout Function Coming Soon");
   };
 
   const handleIncrement = (e, item) => {
