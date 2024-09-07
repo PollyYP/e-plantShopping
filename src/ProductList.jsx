@@ -237,7 +237,7 @@ function ProductList() {
     display: 'flex',
     justifyContent: 'space-between',
     alignItems: 'center',
-    paddingLeft: '22rem',
+    paddingLeft: '20rem',
     width: '1100px',
     }
 
